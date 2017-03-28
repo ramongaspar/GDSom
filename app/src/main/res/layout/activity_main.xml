@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vitor.geracaodosomgds.telacalendario">
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvCalendarioGDS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:minDate="06/01/2017"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="312dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/cvCalendarioGDS">
+
+        <TextView
+            android:text="PRÓXIMO EVENTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProxEvento"
+            android:textStyle="normal|bold"
+            android:textSize="36sp"
+            android:layout_margin="4dp"
+            />
+
+        <TextView
+            android:text="06 de junho - 20h00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtData"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:text="@string/wowo_banda_lala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtArtista"
+            android:textSize="24sp"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+</RelativeLayout>

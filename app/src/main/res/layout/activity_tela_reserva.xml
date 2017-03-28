@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_reserva"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vitor.geracaodosomgds.telaReserva">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="197dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gdsbird"
+            android:id="@+id/imgBandaEvento" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="king of aesthetics"
+        android:ems="10"
+        android:id="@+id/txtNomeReserva"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lblNomeReserva"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="66088044022"
+        android:ems="10"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtCPFReserva"
+        android:layout_below="@+id/lblCPFReserva"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lblNomeReserva"
+        android:textSize="18sp"
+        android:layout_marginTop="48dp"
+        android:text="NOME"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lblCPFReserva"
+        android:layout_below="@+id/txtNomeReserva"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:text="CPF"/>
+
+    <Button
+        android:text="euqueriaooutrobotao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/lblNomeReserva"
+        android:layout_marginBottom="79dp"
+        android:id="@+id/btnReserva" />
+</RelativeLayout>
